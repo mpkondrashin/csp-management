@@ -23,15 +23,17 @@ git clone https://github.com/mpkondrashin/csp-management.git
 cd csp-managementgit 
 python3 -m venv venv
 source venv/bin/activate
-
-```commandline
-Install Deep Security SDK (https://automation.deepsecurity.trendmicro.com/article/20_0/python/):
 ```
 
-pip install https://automation.deepsecurity.trendmicro.com/sdk/20_0/v1/dsm-py-sdk.zip
+Install Deep Security SDK (https://automation.deepsecurity.trendmicro.com/article/20_0/python/):
 
 ```commandline
+pip install https://automation.deepsecurity.trendmicro.com/sdk/20_0/v1/dsm-py-sdk.zip
+```
+
 Install rest of required packages:
+
+```commandline
 pip install -r requirements.txt
 ```
 
