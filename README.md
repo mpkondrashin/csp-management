@@ -15,12 +15,23 @@ or (for Ubuntu flavored Linux):
 ```commandline
 apt-get install python-tk 
 ```
+
 Then clone this repository and install required packages:
+
 ```commandline
 git clone https://github.com/mpkondrashin/csp-management.git
-cd csp-management
+cd csp-managementgit 
 python3 -m venv venv
 source venv/bin/activate
+
+```commandline
+Install Deep Security SDK (https://automation.deepsecurity.trendmicro.com/article/20_0/python/):
+```
+
+pip install https://automation.deepsecurity.trendmicro.com/sdk/20_0/v1/dsm-py-sdk.zip
+
+```commandline
+Install rest of required packages:
 pip install -r requirements.txt
 ```
 
