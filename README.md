@@ -1,4 +1,4 @@
-# Multi-tenant Deep Security Managment
+# Multi-tenant Deep Security Management
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 MTM 1.0
@@ -34,8 +34,8 @@ sudo apt-get install python-tk
 Then clone this repository and install required packages:
 
 ```commandline
-git clone https://github.com/mpkondrashin/csp-management.git
-cd csp-managementgit 
+git clone https://github.com/mpkondrashin/multi-tenant-management.git
+cd multi-tenant-management
 python3 -m venv venv
 source venv/bin/activate
 ```
