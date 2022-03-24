@@ -1,6 +1,21 @@
-# CSP Managment
+# Multi-tenant Deep Security Managment
 
-Trend Micro Multi-tenant Deep Security Managment
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+MTM 1.0
+
+Turn off protection for Deep Security tenant
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+## About MTM
+
+MTM provides ability to get list of tenant from Deep Security Manager and
+turn off protection for each module on all tenant computers
+
+## System requirements
+
+- Python3 & Tkinter installed
+- Deep Security Manager 11.0 or later
 
 ## Setup environment
 
@@ -9,11 +24,11 @@ Following instructions are for Linux/macOS.
 To run please install python3 (https://www.python.org/downloads/) and tkinter.
 The latest can be installed using following command (for macOS):
 ```commandline
-brew install python-tk
+brew install python3-tk
 ```
 or (for Ubuntu flavored Linux):
 ```commandline
-apt-get install python-tk 
+sudo apt-get install python-tk 
 ```
 
 Then clone this repository and install required packages:
@@ -37,34 +52,19 @@ Install rest of required packages:
 pip install -r requirements.txt
 ```
 
-## Run Script
+## Switch off all tenant security fetatures
 
 Use following command to run script:
 ```commandline
-python gui.py
+python mtm.py
 ```
 
-## Build Self-contained Executable
 
-Run following command
-```commandline
-python build.py
-```
-This will generate ```extoword``` executable that does not require to have python
-to be installed.
+### GUI image
 
-Note: This feature was tested only for macOS
+![Configuration window](images/mtm_config.png "Configuration window")
+Configuration window
 
-## GUI image
+![Main window](images/mtm_main.png "Main window")
+Main window
 
-![GUI Image](gui.png "GUI image")
-
-## Bugs
-
-This script was not tested under Windows/Linux. Obvious incompatible spot that should be
-fixed is following line in config.py:
-```python
-__folder = os.path.expanduser('~/Library/Application Support/ExToWord')
-```
-Though Windows icon is added to executable in build.py, this
- is also not tested.
